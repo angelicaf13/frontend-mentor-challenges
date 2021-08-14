@@ -1,0 +1,139 @@
+:root{
+
+    /* Primary Colors*/
+
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral Colors */
+
+    /* Paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75); 
+    /* Background, headings, buttons */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px; 
+    text-align: center;
+    color: var(--transparent-white);
+    background-color: var(--very-light-gray);
+    
+    
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+
+}
+
+footer{
+    display: flex;
+    align-items: flex-end;
+    color: var(--very-dark-cyan);
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    font-size: 3em;
+}
+
+img{
+    width: 70px;
+}
+
+button{
+    
+    background-color: var(--very-light-gray);
+    border-radius: 20px;
+    width: 110px;
+    height: 38px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 60px;
+    transition: all 0.1s;
+    cursor: pointer;
+}
+
+.sedan button:hover{
+    background-color: var(--bright-orange);
+    border: solid 1.5px var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.sedan button{
+    border: solid 2px var(--bright-orange);
+    color: var(--bright-orange);
+}
+
+.suv button:hover{
+    background-color: var(--dark-cyan);
+    border: solid 1.5px var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.suv button{
+    border: solid 2px var(--dark-cyan);
+    color: var(--dark-cyan);
+}
+
+.lux button:hover{
+    background-color: var(--very-dark-cyan);
+    border: solid 1.5px var(--very-light-gray);
+    color: var(--very-light-gray);
+}
+
+.lux button{
+    border: solid 2px var(--very-dark-cyan);
+    color: var(--very-dark-cyan);
+}
+
+.container{
+    display: flex;
+    justify-content: left;
+    width: 80%;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    padding: 40px;
+}
+
+.sedan{
+    background-color: var(--bright-orange);
+}
+
+.suv{
+    background-color: var(--dark-cyan);
+}
+
+.lux{
+    background-color: var(--very-dark-cyan);
+}
+
+a{
+    color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 376px) {
+    .container{
+        flex-direction: column;
+    }
+    
+    footer{
+        padding-top: 20px;
+    }
+}
